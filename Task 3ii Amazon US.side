@@ -1,0 +1,91 @@
+{
+  "id": "63300b55-08e1-45ab-bbcd-c955bd3ee5e8",
+  "version": "2.0",
+  "name": "Task 3(ii) Amazon US",
+  "url": "https://www.amazon.com/",
+  "tests": [{
+    "id": "618c52e9-5147-480c-b6f2-564cb06d1118",
+    "name": "Shoes",
+    "commands": [{
+      "id": "62486146-e822-4b5e-ac3d-98060b6041ae",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "21788247-c97f-496b-8c1e-680f97f7a793",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3c9ea6cf-a9a0-4fcd-a821-90e7cbf16203",
+      "comment": "",
+      "command": "click",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-bar-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4203697-7c02-4568-97c7-f512dec32adf",
+      "comment": "",
+      "command": "type",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-bar-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "shoes"
+    }, {
+      "id": "3a54f97f-26f8-4d15-8f4b-d51ca470d12e",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-bar-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "3f4dbef8-eaa4-4382-b65e-4eb3283c70d4",
+      "comment": "",
+      "command": "click",
+      "target": "class=a-size-base-plus a-color-base a-text-normal",
+      "targets": [],
+      "value": "Under Armour Men's Charged Assert 9 Running Shoe"
+    }, {
+      "id": "2a5e2200-92ac-4693-b9df-14c6f3360165",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "2e333456-7bed-4d0c-b00f-9cadf5c6337b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["618c52e9-5147-480c-b6f2-564cb06d1118"]
+  }],
+  "urls": ["https://www.amazon.com/"],
+  "plugins": []
+}
